@@ -1,3 +1,31 @@
-h1, h2 {
+/* h1, h2 {
   font-family: Lato;
+} */
+.container {
+  height: 20px;
+  background-color: #ccc;
+  position: relative;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.container .progress-bar {
+  border: none;
+  border-radius: 0.5rem;
+  position: absolute;
+  height: 100%;
+  background-color: rgb(126, 60, 248);
+}
+
+#play-animation {
+  animation: progress-animation 5s infinite;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
